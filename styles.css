@@ -1,15 +1,45 @@
 .image #image {
   display: block;
-  width: 70%;
+  width: 80%;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #41b3a3;
 }
 
+#textUnderImage {
+    text-align: center;
+    font-size: 24px;
+}
 
-#title {
-  font-size: 50px;
-  background-color: beige;
+.image:hover + #textUnderImage {
+  color: red;
+  content
+}
+
+.header {
+  padding: 60px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  background: #41b3a3;
   text-align: center;
+  font-size: 30px;
+  color: #c38d9e;
+  border-color: black;
+  border-bottom: 5px;
+  border-style: groove;
+
+}
+
+footer {
+  display: block;
+  font-size: 20px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #41b3a3;
+  border-style: solid;
+
+
 
 }
