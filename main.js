@@ -1,7 +1,4 @@
-var x=20;
-
-main();
-
 function main() {
-  console.log(x);
+  //document.getElementById("myButton").click();
+  alert("Thanks for participating in the survey!");
 }
