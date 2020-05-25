@@ -11,7 +11,7 @@
   <title>UI Survey - SEG3125 Lab 1</title>
 </head>
 
-<body>
+<body onload="testFunction()">
   <div class="header">
     <h1 id="title">SEG3125 Lab 1</h1>
   </div>
@@ -27,7 +27,7 @@
 <form>
   <div class="form" id="question1">
 
-      <h2 class="qTitle">Do you like the fact that the first stream in the recommended streams carousel at the top automatically starts playing when you enter the site?</h2>
+      <h2>Do you like the fact that the first stream in the recommended streams carousel at the top automatically starts playing when you enter the site?</h2>
       <input type="radio" id="yes" name="yesorno" value="yes">
       <label for="yes">Yes</label><br>
       <input type="radio" id="no" name="yesorno" value="no">
@@ -49,7 +49,27 @@
 
   </div>
 
+  <div class="form" id="question3">
 
+      <h2 class="qTitle">Which of the following additions would you like to see added to Twitch? (select all that apply)</h2>
+      <input type="checkbox" id="Q2Choice1" name="Q2Choice1" value="FriendPreview">
+      <label for="Q2Choice1">A live preview of the streams my friends are watching</label><br>
+      <input type="checkbox" id="Q2Choice2" name="Q2Choice2" value="tagSearch">
+      <label for="Q2Choice2">The ability to search for streams based on tags (for example English, IRL, FPS, etc.)</label><br>
+      <input type="checkbox" id="Q2Choice3" name="Q2Choice3" value="removeRecommended">
+      <label for="Q2Choice3">The ability to remove recommended channels and only be shown the channels you are following</label><br />
+      <input type="checkbox" id="Q2Choice4" name="Q2Choice4" value="themeToggle">
+      <label for="Q2Choice4">A darkmode/lightmode toggle button</label>
+
+  </div>
+
+  <div class="form" id="question4">
+    <h2 class="qTitle">Agree/Disagree: having both a recommended channel carousel at the top of the page as well as a recommended channels section is redundant</h2>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="7" value="hello" class="slider" id="myRange" oninput="outputUpdate(value)">
+      <output type="text" for="fader" id="agreementLevel">Neutral</output>
+    </div>
+  </div>
 
 
   <form action="/index.html" target="_top">
